@@ -163,7 +163,27 @@ int main()
    	ref->Eat();
    	ref->Move();
 
+
    	IBird* f = new Parrot("Ara", 3);
    	f->Fly();
+
+       IAnimal* Duc = new Duck("GAG",3);
+       Duc->Move();
+       Duc->Eat();
+       IBird* Duc_B = new Duck("GAG",3);
+       Duc_B->Fly();
+       ISwim* Duc_s = new Duck("GAG",3);
+       Duc_s->Swim();
+
+       IAnimal* Ele = new Elephant("boob", 5000);
+       Ele->Eat();
+       Ele->Move();
+
+       IAnimal* Pin = new Penguin("Pingvi",5);
+       Pin->Move();
+       Pin->Eat();
+       ISwim* Pin_s = new Penguin("Pingvi",5);
+       Pin_s->Swim();
+
 }
 
